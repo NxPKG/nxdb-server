@@ -1,18 +1,18 @@
-# Binaries for programs and plugins
-*.exe
-*.exe~
-*.dll
-*.so
-*.dylib
+/node_modules
+/nxdb-premium.tgz
+/test-integration
+/test-integration/*
+/dist
+/plugins
+/release
+stats.json
+test_tmp/
+*.~lock*
+test-db-*
+nxdb-server.tgz
 
-# Test binary, built with `go test -c`
-*.test
+## copied from the nxdb core via 'npm run prebuild'
+scripts/generate-plugins-package-json.mjs
 
-# Output of the go coverage tool, specifically when used with LiteIDE
-*.out
-
-# Dependency directories (remove the comment below to include it)
-# vendor/
-
-# IDEs
-.vscode/*
+## copied from the nxdb core
+babel.config.js
